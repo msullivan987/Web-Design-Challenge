@@ -8,9 +8,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="..\style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
@@ -51,9 +48,13 @@
         <h1>Graphing Latitudinal Patterns</h1>
         <h2>Using Python, Pandas, and Matplotlib to Better Understand Our World</h2>
         <br>
-        <p>This is a big long paragraph about what the project is and why it's interesting and why you should look at it
+        <p>This project explores weather patterns across the world in relation to latitude. By graphing various weather
+          characteristics, we were able to see what effect (if any) latitude of a particular city has on its weather.
         </p>
-        <p>This is a big long paragraph about what the project is and why it's interesting and why you should look at it
+        <p>To generate the list of cities, a list of 600 random latitudes and longitudes were created in python. The
+          python library CityPy helped us then relate those locations to their nearest cities. Using the Open Weather
+          API, the current weather was then pulled and read into a Pandas dataframe to allow for easy manipulation.
+          Matplotlib was used to make the different charts.
         </p>
       </div>
       <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
@@ -63,28 +64,36 @@
             <a href="vis-plot-cloudiness.html"><img class="comparison-image img-fluid"
                 src="..\visualizations\lat_v_cloudiness.png"></a>
             <div class="card-body">
-              <a href="vis-plot-cloudiness.html"><h5 class="card-title text-center">Latitude v. <br> Cloudiness</h5></a>
+              <a href="vis-plot-cloudiness.html">
+                <h5 class="card-title text-center">Latitude v. <br> Cloudiness</h5>
+              </a>
             </div>
           </div>
           <div class="card" id="box2">
             <a href="vis-plot-humidity.html"><img class="comparison-image img-fluid"
                 src="..\visualizations\lat_v_humidity.png"></a>
             <div class="card-body">
-              <a href="vis-plot-humidity.html"><h5 class="card-title text-center">Latitude v. <br> Humidity</h5></a>
+              <a href="vis-plot-humidity.html">
+                <h5 class="card-title text-center">Latitude v. <br> Humidity</h5>
+              </a>
             </div>
           </div>
           <div class="card" id="box3">
             <a href="vis-plot-maxtemp.html"><img class="comparison-image img-fluid"
                 src="..\visualizations\lat_v_temp.png"></a>
             <div class="card-body">
-              <a href="vis-plot-maxtemp.html"><h5 class="card-title text-center">Latitude v. <br> Temperature</h5></a>
+              <a href="vis-plot-maxtemp.html">
+                <h5 class="card-title text-center">Latitude v. <br> Temperature</h5>
+              </a>
             </div>
           </div>
           <div class="card" id="box4">
             <a href="vis-plot-windspeed.html"><img class="comparison-image img-fluid"
                 src="..\visualizations\lat_v_windspeed.png"></a>
             <div class="card-body">
-              <a href="vis-plot-windspeed.html"><h5 class="card-title text-center">Latitude v. <br> Windspeed</h5></a>
+              <a href="vis-plot-windspeed.html">
+                <h5 class="card-title text-center">Latitude v. <br> Windspeed</h5>
+              </a>
             </div>
           </div>
         </div>
