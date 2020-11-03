@@ -1,8 +1,70 @@
 body {
-    background-color: rgb(231, 231, 240);
+    background-color: rgb(179, 179, 179);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#navbarSupportedContent {
-    po
+h1 {
+    padding-top: 15px;
+    color: rgb(36, 36, 36)
+}
+
+.image_card {
+    width: auto;
+    height: auto;
+    background-color: white;
+    padding: 25px;
+    margin: 15px;
+    padding-right: 10px;
+}
+
+.image_card .card {
+    display: inline-block;
+    width: 45%;
+    margin: 1%;
+}
+
+.image_card .card h5{
+    font-size: 2vw;
+}
+
+.comparison-image {
+    padding: 25px;
+    padding-top: 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+.vis-page-image-block{
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.vis-page-image-block img{
+    max-width: 100%;
+    height: auto;
+}
+
+.vis-page-image-block h1{
+    margin-bottom: 0px;
+}
+
+@media (max-width: 992px) {
+    .image_card .card {
+        display: inline-block;
+        max-width: 100%;
+    } 
+    .image_card .card h5{
+        font-size: 3vw;
+    }
+
+    body {
+        background-color: white;
+    }
+}
+
+@media (min-width: 1140px) {
+   .image_card .card h5{
+       font-size: 15px;
+   }
 }

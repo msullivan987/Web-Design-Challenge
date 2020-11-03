@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Visualizations</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="..\style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="vis-main.html">Weather Visualizations</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Visualizations
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="vis-plot-maxtemp.html">Maximum Temperature</a>
+            <a class="dropdown-item" href="vis-plot-humidity.html">Humidity</a>
+            <a class="dropdown-item" href="vis-plot-cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="vis-plot-windspeed.html">Windspeed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="vis-comparisons.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="vis-data.html">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="vis-page-image-block col-xl-8 col-lg-6 col-md-12 col-sm-12">
+        <h1>Latitude vs. Windspeed</h1>
+        <img src="..\visualizations\lat_v_windspeed.png" class="img-fluid" alt="Latitude vs. Windspeed graph">
+        <br>
+        <p>This is a big long paragraph about what the project is and why it's interesting and why you should look at it
+        </p>
+      </div>
+      <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+        <div class="image_card">
+          <h2 class="text-center">Visualizations</h2>
+          <div class="card" id="box1">
+            <a href="vis-plot-cloudiness.html"><img class="comparison-image img-fluid"
+                src="..\visualizations\lat_v_cloudiness.png"></a>
+            <div class="card-body">
+              <a href="vis-plot-cloudiness.html"><h5 class="card-title text-center">Latitude v. <br> Cloudiness</h5></a>
+            </div>
+          </div>
+          <div class="card" id="box2">
+            <a href="vis-plot-humidity.html"><img class="comparison-image img-fluid"
+                src="..\visualizations\lat_v_humidity.png"></a>
+            <div class="card-body">
+              <a href="vis-plot-humidity.html"><h5 class="card-title text-center">Latitude v. <br> Humidity</h5></a>
+            </div>
+          </div>
+          <div class="card" id="box3">
+            <a href="vis-plot-maxtemp.html"><img class="comparison-image img-fluid"
+                src="..\visualizations\lat_v_temp.png"></a>
+            <div class="card-body">
+              <a href="vis-plot-maxtemp.html"><h5 class="card-title text-center">Latitude v. <br> Temperature</h5></a>
+            </div>
+          </div>
+          <div class="card" id="box4">
+            <a href="vis-plot-windspeed.html"><img class="comparison-image img-fluid"
+                src="..\visualizations\lat_v_windspeed.png"></a>
+            <div class="card-body">
+              <a href="vis-plot-windspeed.html"><h5 class="card-title text-center">Latitude v. <br> Windspeed</h5></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+</html>
